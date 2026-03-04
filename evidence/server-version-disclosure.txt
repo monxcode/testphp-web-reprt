@@ -1,0 +1,17 @@
+Issue ID: INF-01
+Type: Server Version Disclosure
+Severity: Low
+
+Detection Logic:
+WebSentinel detected exposure of server software version
+within HTTP response headers.
+
+Observed Behavior:
+Server header reveals underlying web server technology.
+
+Impact:
+Attackers can correlate exposed version with
+publicly known vulnerabilities.
+
+Validation Status:
+Confirmed via automated response header inspection.

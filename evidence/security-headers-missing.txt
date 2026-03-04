@@ -1,0 +1,25 @@
+Issue ID: HDR-01
+Type: Missing Security Headers
+Severity: Low
+
+Affected URL:
+http://testphp.vulnweb.com/
+
+Headers Identified as Missing:
+- Content-Security-Policy
+- X-Frame-Options
+- X-Content-Type-Options
+- Strict-Transport-Security
+
+Detection Logic:
+WebSentinel analyzed HTTP response headers and flagged absence
+of recommended defensive security headers.
+
+Impact:
+- Increased XSS exploitability
+- Clickjacking exposure
+- MIME sniffing risks
+- Lack of transport enforcement
+
+Validation Status:
+Confirmed via automated header inspection module.

@@ -1,0 +1,30 @@
+Vulnerability ID: XSS-01
+Type: Cross-Site Scripting (XSS)
+Severity: High
+Detection Source: WebSentinel Deep-Safe Scan
+
+Affected Endpoint:
+/guestbook.php
+
+Affected Parameter:
+comment
+
+Detection Logic:
+User-supplied input reflected in response without proper output encoding.
+
+Proof (Based on Scan Result):
+WebSentinel identified unsanitized reflection of injected script payload
+within application response context.
+
+Impact:
+An attacker could inject malicious JavaScript that executes
+in a victim's browser session.
+
+Risk:
+- Session hijacking
+- Credential theft
+- Defacement
+- Client-side redirection
+
+Validation Status:
+Detected via automated payload injection testing (safe mode).

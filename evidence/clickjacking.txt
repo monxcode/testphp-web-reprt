@@ -1,0 +1,20 @@
+Issue ID: UI-01
+Type: Clickjacking Vulnerability
+Severity: Low
+
+Affected URL:
+http://testphp.vulnweb.com/
+
+Detection Logic:
+Absence of X-Frame-Options and CSP frame-ancestors directive.
+
+Proof:
+Application can be embedded inside iframe due to lack
+of frame restriction headers.
+
+Impact:
+Potential UI redress attack where users are tricked
+into interacting with hidden elements.
+
+Validation Status:
+Confirmed via header analysis.

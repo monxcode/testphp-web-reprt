@@ -29,7 +29,7 @@ Immediate remediation of high and critical findings is strongly recommended.
 
 # 2. Engagement Overview
 
-Assessment Type: **Web Application Vulnerability Assessment**
+Assessment Type: **Web Application Vulnerability Assessment**  <br>
 Testing Method: **Automated + Structured Analysis**  
 Scan Profile: **Deep-Safe**  
 Target Scope: **Single Web Application**  

@@ -1,6 +1,6 @@
-# Vulnerability Assessment Report
-## Target Application: http://testphp.vulnweb.com/
-## Assessment Conducted Using: WebSentinel (Deep-Safe Profile)
+## Vulnerability Assessment Report
+### Target Application: http://testphp.vulnweb.com/
+#### Assessment Conducted Using: WebSentinel (Deep-Safe Profile)
 
 ---
 
@@ -10,12 +10,12 @@ A vulnerability assessment was conducted against the target web application usin
 
 The assessment identified a total of 41 vulnerabilities across multiple severity levels, including injection flaws, access control weaknesses, security misconfigurations, and information disclosure issues.
 
-The overall calculated security posture score of the application is:
+**The overall calculated security posture score of the application is:**
 
-Security Score: 46%  
-Risk Level: High Exposure
+Security Score: **46%**  
+Risk Level: **High Exposure**
 
-If deployed in a real production environment, the identified weaknesses could result in:
+**If deployed in a real production environment, the identified weaknesses could result in:**
 
 - Unauthorized data access
 - Database compromise
@@ -29,25 +29,25 @@ Immediate remediation of high and critical findings is strongly recommended.
 
 # 2. Engagement Overview
 
-Assessment Type: Web Application Vulnerability Assessment  
-Testing Method: Automated + Structured Analysis  
-Scan Profile: Deep-Safe  
-Target Scope: Single Web Application  
-Testing Mode: Non-destructive  
-Report Version: 1.0  
+Assessment Type: **Web Application Vulnerability Assessment**
+Testing Method: **Automated + Structured Analysis**  
+Scan Profile: **Deep-Safe**  
+Target Scope: **Single Web Application**  
+Testing Mode: **Non-destructive**  
+Report Version: **1.0** 
 
 ---
 
 # 3. Scope of Assessment
 
-In Scope:
+**In Scope:**
 - http://testphp.vulnweb.com/
 - Publicly accessible endpoints
 - Application parameters
 - HTTP response behavior
 - Security headers
 
-Out of Scope:
+**Out of Scope:**
 - Denial of Service testing
 - Brute-force attacks
 - Infrastructure penetration
@@ -58,7 +58,7 @@ Out of Scope:
 
 # 4. Methodology
 
-The assessment followed a structured vulnerability discovery process including:
+**The assessment followed a structured vulnerability discovery process including:**
 
 1. Endpoint Enumeration
 2. Input Parameter Analysis
@@ -74,7 +74,7 @@ No destructive payloads were executed during testing.
 
 # 5. Risk Rating Model
 
-Vulnerabilities were categorized based on:
+**Vulnerabilities were categorized based on:**
 
 - Technical impact
 - Exploitability
@@ -82,7 +82,7 @@ Vulnerabilities were categorized based on:
 - Authentication requirement
 - Data sensitivity
 
-Severity Levels:
+**Severity Levels:**
 - Critical
 - High
 - Medium
@@ -93,10 +93,10 @@ Severity Levels:
 
 # 6. Vulnerability Summary
 
-Total Vulnerabilities Identified: 41  
-Security Score: 46%
+Total Vulnerabilities Identified: **41**  
+Security Score: **46%**
 
-Major categories include:
+**Major categories include:**
 
 - SQL Injection
 - Cross-Site Scripting (XSS)
@@ -108,7 +108,7 @@ Major categories include:
 - HTTP Method Misconfiguration
 - Lack of Rate Limiting
 
-Detailed breakdown available in:
+**Detailed breakdown available in:**
 - docs/detailed-findings.md
 - vul-list/vulnerability-table.md
 
@@ -116,7 +116,7 @@ Detailed breakdown available in:
 
 # 7. Key Risk Observations
 
-High-risk findings include:
+**High-risk findings include:**
 
 - SQL Injection in application parameters
 - Stored Cross-Site Scripting in guestbook functionality
@@ -130,20 +130,20 @@ These vulnerabilities significantly increase attack surface exposure.
 
 # 8. Evidence & Reporting
 
-Raw structured scan output:
-reports/websentinel_deep_safe_scan.json
+*Raw structured scan output:*
+**reports/websentinel_deep_safe_scan.json**
 
-Generated assessment report:
-reports/websentinel_deep_safe_scan.pdf
+*Generated assessment report:*
+**reports/websentinel_deep_safe_scan.pdf**
 
-Proof examples available in:
-evidence/
+*Proof examples available in:*
+**evidence/**
 
 ---
 
 # 9. Remediation Overview
 
-Immediate Actions Recommended:
+**Immediate Actions Recommended:**
 
 - Implement parameterized queries
 - Apply output encoding for user input
@@ -153,7 +153,7 @@ Immediate Actions Recommended:
 - Configure essential security headers
 - Enforce HTTPS with HSTS
 
-Full remediation guidance:
+**Full remediation guidance:**
 docs/remediation-guide.md
 
 ---
@@ -177,11 +177,11 @@ In a real-world engagement, this report would be considered confidential and res
 
 # 12. Assessor Information
 
-Security Assessment Conducted Using:
-WebSentinel Security Scanner
+*Security Assessment Conducted Using:*
+**WebSentinel Security Scanner**
 
-Profile:
-Deep-Safe Structured Analysis
+*Profile:*
+**Deep-Safe Structured Analysis**
 
-Report Version:
-1.0
+*Report Version:*
+**1.0**

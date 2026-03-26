@@ -4,9 +4,9 @@
 
 During the Deep-Safe scan, WebSentinel discovered multiple static and dynamic endpoints across the application.
 
-Total Endpoints Identified: 34  
-Maximum Crawl Depth: 3  
-HTTP Methods Observed: GET, POST  
+Total Endpoints Identified: **34**  
+Maximum Crawl Depth: **3**  
+HTTP Methods Observed: **GET, POST**  
 
 ---
 
@@ -24,19 +24,19 @@ HTTP Methods Observed: GET, POST
 
 ## 3. High-Risk Endpoints
 
-### guestbook.php
-- Method: POST
-- Forms: 1
-- Vulnerability: Reflected XSS
-- Risk Level: High
+#### guestbook.php
+- Method: **POST**
+- Forms: **1**
+- Vulnerability: **Reflected XSS**
+- Risk Level: **High**
 
-### product.php?pic=1
-- Parameter: pic
+#### product.php?pic=1
+- Parameter: **pic**
 - Dynamic content rendering
 - Potential injection surface
 
-### showimage.php?file=
-- Parameter: file
+#### showimage.php?file=
+- Parameter: **file**
 - File handling endpoint
 - Potential path manipulation surface (no exploitation confirmed)
 
@@ -44,7 +44,7 @@ HTTP Methods Observed: GET, POST
 
 ## 4. Parameterized Endpoints
 
-The following parameters were identified during crawling:
+**The following parameters were identified during crawling:**
 
 - cat
 - artist
@@ -53,7 +53,7 @@ The following parameters were identified during crawling:
 - file
 - size
 
-These parameters represent potential input vectors for:
+**These parameters represent potential input vectors for:**
 - Injection attacks
 - File inclusion
 - Parameter tampering
@@ -63,13 +63,13 @@ These parameters represent potential input vectors for:
 
 ## 5. Authentication Surface
 
-Identified authentication-related pages:
+**Identified authentication-related pages:**
 
 - login.php
 - signup.php
 - secured/newuser.php
 
-Forms detected:
+**Forms detected:**
 - Login forms
 - Account creation forms
 - User information submission forms
@@ -80,7 +80,7 @@ No authentication bypass attempts were performed.
 
 ## 6. Dynamic Routing Areas
 
-Rewritten URL structures discovered:
+**Rewritten URL structures discovered:**
 
 - /Mod_Rewrite_Shop/
 - /Details/{product}/{id}/
@@ -93,7 +93,7 @@ These endpoints dynamically render product content and represent additional atta
 
 ## 7. Exposure Analysis
 
-Key observations:
+**Key observations:**
 
 - Multiple dynamic endpoints without security headers
 - File-serving endpoints exposed publicly
@@ -104,7 +104,7 @@ Key observations:
 
 ## 8. Attack Surface Summary
 
-The application exposes:
+**The application exposes:**
 
 - Form-based inputs
 - URL parameters

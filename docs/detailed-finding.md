@@ -6,36 +6,37 @@ This section provides technical details for each identified vulnerability catego
 
 # 1. Reflected Cross-Site Scripting (XSS)
 
-## Vulnerability Title
+#### Vulnerability Title
 Reflected XSS via form field `text`
 
-## Affected Endpoint
+#### Affected Endpoint
 http://testphp.vulnweb.com/guestbook.php
 
-## Method
+#### Method
 POST
 
-## Parameter
+#### Parameter
 text
 
-## Severity
+#### Severity
 High
 
-## CWE
+#### CWE
 CWE-79
 
-## CVSS v3.1
+#### CVSS v3.1
 7.4
 
-## Confidence
+#### Confidence
 Probable
 
 ## Description
 User-controlled input submitted through the `text` form field is reflected in the HTTP response without proper sanitization or output encoding. This allows execution of arbitrary JavaScript in the victim’s browser.
 
 ## Evidence
-Payload used:
-<script>alert(1)</script>
+**Payload used:**
+
+`<script>alert(1)</script>`
 
 The payload was reflected in the response.
 
@@ -78,7 +79,7 @@ Multiple endpoints are missing the `Strict-Transport-Security` (HSTS) header.
 - Mod_Rewrite_Shop endpoints
 
 ## Impact
-Without HSTS:
+**Without HSTS:**
 - Users may be vulnerable to downgrade attacks
 - Man-in-the-Middle (MITM) attacks become easier
 - HTTPS enforcement is not guaranteed
@@ -100,7 +101,7 @@ CWE-1021
 Probable
 
 ## Description
-Pages lack protection mechanisms such as:
+**Pages lack protection mechanisms such as:**
 - X-Frame-Options
 - Content-Security-Policy (frame-ancestors)
 
@@ -132,8 +133,8 @@ Confirmed
 HTTP response headers disclose server and framework version details.
 
 ## Evidence
-Server: nginx/1.19.0  
-X-Powered-By: PHP/5.6.40
+Server: **nginx/1.19.0**  
+X-Powered-By: **PHP/5.6.40**
 
 ## Impact
 - Assists attackers in vulnerability research
@@ -144,7 +145,7 @@ X-Powered-By: PHP/5.6.40
 
 # Risk Concentration Analysis
 
-The majority of findings are configuration-related, indicating:
+**The majority of findings are configuration-related, indicating:**
 
 - Weak security hardening
 - Default server configurations

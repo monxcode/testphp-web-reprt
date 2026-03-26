@@ -2,17 +2,17 @@
 
 This document provides recommended mitigation strategies based on the vulnerabilities identified during the WebSentinel deep-safe scan.
 
-Total Issues Identified: 41  
-Overall Security Score: 46%
+Total Issues Identified: **41**  
+Overall Security Score: **46%**
 
 ---
 
 ## 1. Injection Vulnerabilities (SQL Injection)
 
-### Risk
+#### Risk
 Database compromise, data leakage, authentication bypass.
 
-### Remediation
+#### Remediation
 
 - Use prepared statements / parameterized queries
 - Implement ORM frameworks where possible
@@ -24,10 +24,10 @@ Database compromise, data leakage, authentication bypass.
 
 ## 2. Cross-Site Scripting (XSS)
 
-### Risk
+#### Risk
 Session hijacking, credential theft, client-side malware injection.
 
-### Remediation
+#### Remediation
 
 - Apply proper output encoding (HTML, JS, URL context-based encoding)
 - Use Content Security Policy (CSP)
@@ -39,10 +39,10 @@ Session hijacking, credential theft, client-side malware injection.
 
 ## 3. Missing Security Headers
 
-### Risk
+#### Risk
 Clickjacking, MIME sniffing, downgrade attacks.
 
-### Recommended Headers
+#### Recommended Headers
 
 - Content-Security-Policy
 - X-Frame-Options
@@ -55,10 +55,10 @@ Clickjacking, MIME sniffing, downgrade attacks.
 
 ## 4. Clickjacking Vulnerability
 
-### Risk
+#### Risk
 UI redress attacks.
 
-### Remediation
+#### Remediation
 
 - Implement `X-Frame-Options: DENY` or `SAMEORIGIN`
 - Use CSP frame-ancestors directive
@@ -67,10 +67,10 @@ UI redress attacks.
 
 ## 5. Server Version Disclosure
 
-### Risk
+#### Risk
 Attackers can target known vulnerabilities of exposed versions.
 
-### Remediation
+#### Remediation
 
 - Disable server tokens
 - Hide X-Powered-By headers
@@ -81,10 +81,10 @@ Attackers can target known vulnerabilities of exposed versions.
 
 ## 6. Broken Access Control
 
-### Risk
+#### Risk
 Unauthorized data access or privilege escalation.
 
-### Remediation
+#### Remediation
 
 - Enforce server-side authorization checks
 - Implement role-based access control (RBAC)
@@ -95,10 +95,10 @@ Unauthorized data access or privilege escalation.
 
 ## 7. Session Management Weaknesses
 
-### Risk
+#### Risk
 Session hijacking and fixation.
 
-### Remediation
+#### Remediation
 
 - Regenerate session IDs after login
 - Set Secure and HTTPOnly cookie flags
@@ -120,7 +120,7 @@ Session hijacking and fixation.
 
 ## Final Recommendation
 
-The application requires structured remediation prioritization:
+**The application requires structured remediation prioritization:**
 
 1. Fix Critical vulnerabilities immediately
 2. Address High severity issues within defined SLA

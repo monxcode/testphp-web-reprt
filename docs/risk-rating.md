@@ -4,7 +4,7 @@ This project uses a structured internal risk classification model based on sever
 
 ## Risk Calculation Factors
 
-Each vulnerability was evaluated based on:
+**Each vulnerability was evaluated based on:**
 
 - Technical Impact
 - Exploitability
@@ -49,8 +49,8 @@ Each vulnerability was evaluated based on:
 
 ## Overall Risk Overview
 
-- Total Vulnerabilities: 41
-- Security Score: 46%
-- Risk Posture: High Exposure
+- Total Vulnerabilities: **41**
+- Security Score: **46%**
+- Risk Posture: **High Exposure**
 
 The application demonstrates significant attack surface presence and would be considered high-risk in a real-world production scenario.

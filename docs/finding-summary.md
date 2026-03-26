@@ -32,12 +32,12 @@ The assessment revealed recurring security header issues, clickjacking exposure,
 
 ## 4. Most Critical Finding
 
-### Reflected XSS – guestbook.php
+#### Reflected XSS – guestbook.php
 - Parameter: `text`
-- Method: POST
-- CWE: CWE-79
-- CVSS: 7.4 (High)
-- Confidence: Probable
+- Method: **POST**
+- CWE: **CWE-79**
+- CVSS: **7.4 (High)**
+- Confidence: **Probable**
 
 This vulnerability allows reflected JavaScript execution through unsanitized user input.
 
@@ -45,7 +45,7 @@ This vulnerability allows reflected JavaScript execution through unsanitized use
 
 ## 5. Recurring Security Weaknesses
 
-The most frequently observed issues include:
+**The most frequently observed issues include:**
 
 - Absence of Strict-Transport-Security header
 - Missing X-Frame-Options protection
@@ -57,7 +57,7 @@ These misconfigurations significantly reduce the overall security posture.
 
 ## 6. Security Posture Assessment
 
-Based on:
+**Based on:**
 - Total vulnerabilities (41)
 - Presence of High severity issue
 - Multiple repeated misconfigurations

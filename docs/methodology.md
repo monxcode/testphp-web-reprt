@@ -32,7 +32,7 @@ Maximum crawl depth reached: **3**
 ---
 
 ### Phase 3 – Passive Analysis
-The following checks were performed without injecting aggressive payloads:
+**The following checks were performed without injecting aggressive payloads:**
 
 - HTTP security header analysis
 - Server version disclosure detection
@@ -43,7 +43,7 @@ The following checks were performed without injecting aggressive payloads:
 ---
 
 ### Phase 4 – Safe Active Testing
-Non-destructive payloads were used to detect:
+**Non-destructive payloads were used to detect:**
 
 - Reflected Cross-Site Scripting (XSS)
 - Input reflection behavior
@@ -56,19 +56,19 @@ No destructive or high-impact payloads were executed.
 
 ## 3. Vulnerability Classification
 
-Identified issues were categorized based on:
+**Identified issues were categorized based on:**
 
-- Severity (Low, Medium, High)
-- CWE (Common Weakness Enumeration)
-- CVSS v3.1 Score
-- Exploitability (Passive / Probable)
-- Confidence Level (Confirmed / Probable)
+- Severity **(Low, Medium, High)**
+- CWE **(Common Weakness Enumeration)**
+- CVSS **v3.1 Score**
+- Exploitability **(Passive / Probable)**
+- Confidence Level **(Confirmed / Probable)**
 
 ---
 
 ## 4. Risk Rating Model
 
-Risk levels were determined using:
+**Risk levels were determined using:**
 
 - CVSS score
 - Impact potential
@@ -89,10 +89,10 @@ Risk levels were determined using:
 
 ## 6. Tools & Environment
 
-- Tool: WebSentinel
-- Profile: Deep-Safe
-- Mode: Automated Black-Box
-- Output Formats: JSON, PDF
+- Tool: **WebSentinel**
+- Profile: **Deep-Safe**
+- Mode: **Automated Black-Box**
+- Output Formats: **JSON, PDF**
 
 ---
 

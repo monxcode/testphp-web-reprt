@@ -2,25 +2,25 @@
 
 ## Scan Information
 
-- Tool Name: WebSentinel
-- Scan Profile: deep-safe
+- Tool Name: **WebSentinel**
+- Scan Profile: **deep-safe**
 - Target URL: http://testphp.vulnweb.com/
-- Scan Type: Passive + Active (Safe Mode)
-- Output Formats: JSON, PDF
-- Total Vulnerabilities Identified: 41
-- Overall Security Score: 46%
+- Scan Type: **Passive + Active (Safe Mode)**
+- Output Formats: **JSON, PDF**
+- Total Vulnerabilities Identified: **41**
+- Overall Security Score: **46%**
 
 ## Severity Distribution
 
-- Critical: (as per scan results)
-- High: (as per scan results)
-- Medium: (as per scan results)
-- Low: (as per scan results)
-- Informational: (if applicable)
+- Critical: **(as per scan results)**
+- High: **(as per scan results)**
+- Medium: **(as per scan results)**
+- Low: **(as per scan results)**
+- Informational: **(if applicable)**
 
 ## Risk Classification Method
 
-Vulnerabilities were categorized based on:
+**Vulnerabilities were categorized based on:**
 
 - CWE mapping
 - Impact level
@@ -28,7 +28,7 @@ Vulnerabilities were categorized based on:
 - Affected component
 - Security misconfiguration presence
 
-Severity classification logic:
+**Severity classification logic:**
 
 - Critical: Direct exploitation leading to data compromise or remote code execution
 - High: Authentication bypass, injection vulnerabilities, access control failures

@@ -27,9 +27,9 @@ While comprehensive within its configured scope, certain limitations apply.
 
 ## Reporting Constraints
 
-- Findings are based strictly on scan output JSON data
+- Findings are based strictly on scan output **JSON** data
 - No external threat intelligence correlation applied
-- No compliance mapping (e.g., OWASP Top 10, PCI-DSS) included in this report version
+- No compliance mapping **(e.g., OWASP Top 10, PCI-DSS)** included in this report version
 
 ## Important Note
 

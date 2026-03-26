@@ -19,13 +19,13 @@ The objective of this assessment was to identify common web application security
 
 ## 3. In-Scope Components
 
-The following components were included in scope:
+**The following components were included in scope:**
 
 - Publicly accessible web pages
 - Static and dynamic endpoints
-- Form-based inputs (GET & POST)
+- Form-based inputs **(GET & POST)**
 - Query parameters
-- Authentication-related pages (login, signup)
+- Authentication-related pages **(login, signup)**
 - AJAX endpoints
 - Rewritten URL paths
 - Image/file handler endpoints
@@ -34,7 +34,7 @@ The following components were included in scope:
 
 ## 4. Out of Scope
 
-The following were not included in this assessment:
+**The following were not included in this assessment:**
 
 - Denial of Service (DoS) testing
 - Brute force attacks
@@ -48,11 +48,11 @@ The following were not included in this assessment:
 
 ## 5. Scan Coverage Summary
 
-- Total Endpoints Discovered: 34
-- Maximum Crawl Depth: 3
-- HTTP Methods Tested: GET, POST
-- Dynamic Endpoints Tested: Yes
-- Form Inputs Tested: Yes
+- Total Endpoints Discovered: **34**
+- Maximum Crawl Depth: **3**
+- HTTP Methods Tested: **GET, POST**
+- Dynamic Endpoints Tested: **Yes**
+- Form Inputs Tested: **Yes**
 
 ---
 
